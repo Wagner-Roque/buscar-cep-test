@@ -19,6 +19,7 @@ public class BuscarCepService {
         this.cepClient = cepClient;
         this.logRepository = logRepository;
         this.logMapper = logMapper;
+
     }
 
     public CepResponseDto buscarCep(String cep) {

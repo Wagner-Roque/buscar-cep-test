@@ -13,7 +13,7 @@ public class CepClient {
     }
 
     public CepResponseDto consultarCep(String cep) {
-        String url = "http://localhost:8080/mock/cep/" + cep;
+         String url = "https://viacep.com.br/ws/"+cep+"/json";
         return restTemplate.getForObject(url, CepResponseDto.class);
     }
 }

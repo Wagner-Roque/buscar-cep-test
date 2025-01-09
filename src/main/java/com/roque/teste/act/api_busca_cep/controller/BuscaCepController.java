@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import io.swagger.annotations.ApiOperation;
 @RestController
-@RequestMapping("/api/v1/cep")
+@RequestMapping("api/v1/cep")
 @Api(tags = "Busca CEP")
 public class BuscaCepController {
     private final BuscarCepService cepService;
@@ -20,7 +20,7 @@ public class BuscaCepController {
         this.cepService = cepService;
     }
     @ApiOperation(value = "Buscar informações de um CEP", notes = "Consulta uma API externa para retornar dados do CEP informado.")
-    @GetMapping("/{cep}")
+    @GetMapping("{cep}")
     public ResponseEntity<CepResponseDto> buscarCep(@PathVariable String cep) {
         CepResponseDto response = cepService.buscarCep(cep);
         return ResponseEntity.ok(response);
