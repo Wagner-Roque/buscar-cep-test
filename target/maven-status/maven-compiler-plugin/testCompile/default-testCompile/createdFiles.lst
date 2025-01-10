@@ -1,3 +1,2 @@
-com\roque\teste\act\api_busca_cep\ApiBuscaCepApplicationTests.class
 com\roque\teste\act\api_busca_cep\service\BuscarCepServiceTest.class
 com\roque\teste\act\api_busca_cep\controller\BuscaCepControllerTest.class
