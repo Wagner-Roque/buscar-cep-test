@@ -1,10 +1,10 @@
 C:\Users\roque\desenvolvimento\api-busca-cep\src\main\java\com\roque\teste\act\api_busca_cep\ApiBuscaCepApplication.java
-C:\Users\roque\desenvolvimento\api-busca-cep\src\main\java\com\roque\teste\act\api_busca_cep\client\CepClient.java
 C:\Users\roque\desenvolvimento\api-busca-cep\src\main\java\com\roque\teste\act\api_busca_cep\config\SwaggerConfig.java
 C:\Users\roque\desenvolvimento\api-busca-cep\src\main\java\com\roque\teste\act\api_busca_cep\repository\LogRepository.java
+C:\Users\roque\desenvolvimento\api-busca-cep\src\main\java\com\roque\teste\act\api_busca_cep\controller\BuscarCepController.java
 C:\Users\roque\desenvolvimento\api-busca-cep\src\main\java\com\roque\teste\act\api_busca_cep\service\BuscarCepService.java
 C:\Users\roque\desenvolvimento\api-busca-cep\src\main\java\com\roque\teste\act\api_busca_cep\model\dto\CepResponseDto.java
 C:\Users\roque\desenvolvimento\api-busca-cep\src\main\java\com\roque\teste\act\api_busca_cep\model\entity\LogEntity.java
 C:\Users\roque\desenvolvimento\api-busca-cep\src\main\java\com\roque\teste\act\api_busca_cep\model\mapper\LogMapper.java
-C:\Users\roque\desenvolvimento\api-busca-cep\src\main\java\com\roque\teste\act\api_busca_cep\controller\BuscaCepController.java
+C:\Users\roque\desenvolvimento\api-busca-cep\src\main\java\com\roque\teste\act\api_busca_cep\client\BuscarCepClient.java
 C:\Users\roque\desenvolvimento\api-busca-cep\src\main\java\com\roque\teste\act\api_busca_cep\config\WireMockConfig.java

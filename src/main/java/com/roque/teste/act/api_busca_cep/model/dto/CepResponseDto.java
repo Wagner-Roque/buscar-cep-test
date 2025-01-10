@@ -4,8 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 
-public class CepResponseDto {
+
+public class CepResponseDto implements Serializable {
+
+
     private String cep;
     private String logradouro;
     private String complemento;
@@ -14,7 +18,7 @@ public class CepResponseDto {
     private String uf;
 
     public String getCep() {
-        return cep;
+        return cep == null ? "" : cep;
     }
 
     public void setCep(String cep) {
@@ -22,7 +26,7 @@ public class CepResponseDto {
     }
 
     public String getLogradouro() {
-        return logradouro;
+        return  logradouro == null ? "" : logradouro;
     }
 
     public void setLogradouro(String logradouro) {
@@ -30,7 +34,7 @@ public class CepResponseDto {
     }
 
     public String getComplemento() {
-        return complemento;
+        return complemento == null ? "" : complemento;
     }
 
     public void setComplemento(String complemento) {
@@ -38,7 +42,7 @@ public class CepResponseDto {
     }
 
     public String getBairro() {
-        return bairro;
+        return bairro == null ? "" : bairro;
     }
 
     public void setBairro(String bairro) {
@@ -46,7 +50,7 @@ public class CepResponseDto {
     }
 
     public String getLocalidade() {
-        return localidade;
+        return localidade == null ? "" : localidade;
     }
 
     public void setLocalidade(String localidade) {
@@ -54,7 +58,7 @@ public class CepResponseDto {
     }
 
     public String getUf() {
-        return uf;
+        return uf == null ? "" : uf;
     }
 
     public void setUf(String uf) {

@@ -1,7 +1,5 @@
 package com.roque.teste.act.api_busca_cep.config;
 
-import io.swagger.v3.oas.models.OpenAPI;
-import io.swagger.v3.oas.models.info.Info;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -18,17 +16,9 @@ public class SwaggerConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.exemplo.buscacep.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.roque.teste.act.api_busca_cep.controller"))
                 .paths(PathSelectors.any())
-                .build()
-                .apiInfo(apiInfo());
-    }
-
-    private ApiInfo apiInfo() {
-        return new ApiInfoBuilder()
-                .title("Busca CEP API")
-                .description("API para busca de CEP e armazenamento de logs das consultas")
-                .version("1.0.0")
                 .build();
     }
+
 }

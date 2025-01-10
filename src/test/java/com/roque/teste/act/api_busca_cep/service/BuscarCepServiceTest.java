@@ -1,6 +1,6 @@
 package com.roque.teste.act.api_busca_cep.service;
 
-import com.roque.teste.act.api_busca_cep.client.CepClient;
+import com.roque.teste.act.api_busca_cep.client.BuscarCepClient;
 import com.roque.teste.act.api_busca_cep.model.dto.CepResponseDto;
 import com.roque.teste.act.api_busca_cep.model.entity.LogEntity;
 import com.roque.teste.act.api_busca_cep.model.mapper.LogMapper;
@@ -18,7 +18,7 @@ import static org.mockito.Mockito.*;
 class BuscarCepServiceTest {
 
     @Mock
-    private CepClient cepClient;
+    private BuscarCepClient cepClient;
 
     @Mock
     private LogRepository logRepository;

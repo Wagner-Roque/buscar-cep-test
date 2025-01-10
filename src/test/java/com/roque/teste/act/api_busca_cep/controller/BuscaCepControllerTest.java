@@ -18,7 +18,7 @@ class BuscaCepControllerTest {
     private BuscarCepService buscarCepService;
 
     @InjectMocks
-    private BuscaCepController buscaCepController;
+    private BuscarCepController buscaCepController;
 
     @BeforeEach
     void setUp() {
