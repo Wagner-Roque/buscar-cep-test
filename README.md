@@ -45,3 +45,6 @@ Documentacao:
 
 http://localhost:8080/swagger-ui/
 http://localhost:15432/browser/
+![](C:\Users\roque\OneDrive\Imagens\busca-cep.drawio)
+
+<img src="C:\Users\roque\OneDrive\Imagens\busca-cep.jpg"/>
