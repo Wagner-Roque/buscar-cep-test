@@ -8,8 +8,6 @@ import java.io.Serializable;
 
 
 public class CepResponseDto implements Serializable {
-
-
     private String cep;
     private String logradouro;
     private String complemento;
@@ -63,6 +61,9 @@ public class CepResponseDto implements Serializable {
 
     public void setUf(String uf) {
         this.uf = uf;
+    }
+
+    public CepResponseDto() {
     }
 
     public CepResponseDto(String cep, String logradouro, String complemento, String bairro, String localidade, String uf) {

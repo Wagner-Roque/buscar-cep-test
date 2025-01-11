@@ -26,22 +26,19 @@ class BuscaCepControllerTest {
     }
 
     @Test
-    void buscarCep_DeveRetornarCepResponseDto() {
-        // Arrange
+    void buscarCepDeveRetornarCepResponseDto() {
+
         String cep = "01001000";
-        CepResponseDto mockResponse = new CepResponseDto("01001-000", "Rua Exemplo", "apto", "Centro", "São Paulo", "SP");
+        CepResponseDto mockResponse = new CepResponseDto("01001-000", "Rua Ubacaba", "apto", "Centro", "São Paulo", "SP");
 
         when(buscarCepService.buscarCep(cep)).thenReturn(mockResponse);
 
-        // Act
         ResponseEntity<CepResponseDto> response = buscaCepController.buscarCep(cep);
 
-        // Assert
         assertNotNull(response);
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals(mockResponse, response.getBody());
 
-        // Verifica se o serviço foi chamado corretamente
-        verify(buscarCepService, times(1)).buscarCep(cep);
+           verify(buscarCepService, times(1)).buscarCep(cep);
     }
 }
