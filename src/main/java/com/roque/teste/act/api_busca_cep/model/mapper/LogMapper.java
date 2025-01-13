@@ -1,7 +1,7 @@
 package com.roque.teste.act.api_busca_cep.model.mapper;
 
+import com.roque.teste.act.api_busca_cep.entity.LogEntity;
 import com.roque.teste.act.api_busca_cep.model.dto.CepResponseDto;
-import com.roque.teste.act.api_busca_cep.model.entity.LogEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import java.time.LocalDateTime;

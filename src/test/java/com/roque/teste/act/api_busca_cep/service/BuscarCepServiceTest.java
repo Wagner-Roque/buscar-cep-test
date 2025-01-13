@@ -1,8 +1,8 @@
 package com.roque.teste.act.api_busca_cep.service;
 
 import com.roque.teste.act.api_busca_cep.client.BuscarCepClient;
+import com.roque.teste.act.api_busca_cep.entity.LogEntity;
 import com.roque.teste.act.api_busca_cep.model.dto.CepResponseDto;
-import com.roque.teste.act.api_busca_cep.model.entity.LogEntity;
 import com.roque.teste.act.api_busca_cep.model.mapper.LogMapper;
 import com.roque.teste.act.api_busca_cep.repository.LogRepository;
 import org.junit.jupiter.api.BeforeEach;
