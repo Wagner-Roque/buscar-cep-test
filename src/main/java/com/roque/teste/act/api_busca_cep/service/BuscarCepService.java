@@ -8,6 +8,8 @@ import com.roque.teste.act.api_busca_cep.repository.LogRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.regex.Pattern;
+
 @Service
 public class BuscarCepService {
     private final BuscarCepClient cepClient;
@@ -23,6 +25,15 @@ public class BuscarCepService {
     }
 
     public CepResponseDto buscarCep(String cep) {
+
+        String cepPattern = "\\d{8}";
+
+        // Verifica se o CEP está no formato correto
+        if (!Pattern.matches(cepPattern, cep)) {
+            // Lança uma exceção ou retorna um objeto de erro, indicando que o CEP é inválido
+            throw new IllegalArgumentException("CEP inválido. Deve conter 8 dígitos numéricos.");
+        }
+
         // Chamada à API externa
         CepResponseDto response = cepClient.consultarCep(cep);
 

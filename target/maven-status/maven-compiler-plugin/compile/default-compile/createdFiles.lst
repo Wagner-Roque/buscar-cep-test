@@ -1,11 +1,12 @@
+com\roque\teste\act\api_busca_cep\exception\GlobalExceptionHandler.class
+com\roque\teste\act\api_busca_cep\ApiBuscaCepApplication.class
+com\roque\teste\act\api_busca_cep\client\BuscarCepClient.class
+com\roque\teste\act\api_busca_cep\service\BuscarCepService.class
+com\roque\teste\act\api_busca_cep\model\entity\LogEntity.class
+com\roque\teste\act\api_busca_cep\config\WireMockConfig.class
 com\roque\teste\act\api_busca_cep\model\dto\CepResponseDto.class
 com\roque\teste\act\api_busca_cep\model\mapper\LogMapperImpl.class
 com\roque\teste\act\api_busca_cep\config\SwaggerConfig.class
 com\roque\teste\act\api_busca_cep\model\mapper\LogMapper.class
-com\roque\teste\act\api_busca_cep\ApiBuscaCepApplication.class
-com\roque\teste\act\api_busca_cep\client\BuscarCepClient.class
-com\roque\teste\act\api_busca_cep\service\BuscarCepService.class
 com\roque\teste\act\api_busca_cep\controller\BuscarCepController.class
-com\roque\teste\act\api_busca_cep\model\entity\LogEntity.class
-com\roque\teste\act\api_busca_cep\config\WireMockConfig.class
 com\roque\teste\act\api_busca_cep\repository\LogRepository.class
